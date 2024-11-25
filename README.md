@@ -77,16 +77,6 @@ O código principal implementa um menu interativo que permite:
 
 ---
 
-### Gráficos de Custo Assintótico do Problema 2
-
-#### 1. Crescimento da Altura
-![Altura de uma árvore](https://via.placeholder.com/800x400?text=Gráfico:+Crescimento+da+Altura)
-
-#### 2. Custo de Operações (Inserção e Remoção)
-![Custo Operacional](https://via.placeholder.com/800x400?text=Gráfico:+Custo+de+Operações)
-
----
-
 ## Problema 3: Dicionário Eletrônico com Autocompletar
 
 ### Descrição do Código do Problema 3
@@ -148,5 +138,9 @@ Este código implementa um dicionário eletrônico que utiliza uma árvore biná
 1. **Problema 2:**
    ```bash
    cd Problema2
-   make
-   ./build/main.out
+   make r
+
+2. **Problema 3:**
+   ```bash
+   cd Problema3
+   make r
