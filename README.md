@@ -1,6 +1,6 @@
 # README - Problemas 2 e 3: Análise de Estruturas de Dados e Impacto Computacional
 
----
+
 
 ## Sumário
 
@@ -16,7 +16,7 @@
    - [Custo Computacional e Discussão](#custo-computacional-e-discussão)
 4. [Conclusão Geral](#conclusão-geral)
 
----
+
 
 ## Introdução
 
@@ -24,7 +24,7 @@ Este documento explora a implementação de estruturas de dados utilizando árvo
 
 Além da explicação do código, o documento apresenta uma análise detalhada sobre o impacto computacional das operações realizadas, destacando como o balanceamento da árvore influencia a eficiência.
 
----
+
 
 ## Problema 2: Altura Máxima e Análise de Crescimento em Árvores Binárias
 
@@ -40,7 +40,7 @@ O código principal utiliza a classe `BinaryTree` para gerenciar a árvore biná
 - **Altura e Caminho Mais Longo:** Calcula a altura da árvore e identifica o caminho mais extenso entre a raiz e uma folha.
 - **Interação com o Usuário:** Um menu oferece opções de inserção, remoção, consulta de altura e saída.
 
----
+
 
 ### Estruturas Utilizadas no Problema 2
 
@@ -56,7 +56,7 @@ A implementação utiliza uma **Árvore Binária de Busca (BST)**, que é uma es
 - Feito recursivamente, comparando as alturas dos sub-ramos esquerdo e direito.
 - A altura da árvore é \(1 + \max(\text{alturaEsquerda}, \text{alturaDireita})\).
 
----
+
 
 ### Análise de Crescimento
 
@@ -80,7 +80,7 @@ A implementação utiliza uma **Árvore Binária de Busca (BST)**, que é uma es
 - Árvores desbalanceadas apresentaram em média **39% mais custo computacional** nas operações devido à maior profundidade.
 - Árvores equilibradas limitaram esse aumento, evidenciando a eficiência do balanceamento.
 
----
+
 
 ## Problema 3: Dicionário Eletrônico com Autocompletar
 
@@ -105,7 +105,7 @@ O código implementa um dicionário eletrônico usando uma árvore binária de b
    - O usuário digita um prefixo e recebe sugestões de palavras.
    - Busca termina automaticamente se o prefixo coincide com uma palavra.
 
----
+
 
 ### Estruturas Utilizadas no Problema 3
 
@@ -120,7 +120,7 @@ O código implementa um dicionário eletrônico usando uma árvore binária de b
   - **Inserção e Busca:** Ambos têm custo \(O(k)\), onde \(k\) é o comprimento do prefixo.
   - Menor uso de memória para prefixos comuns.
 
----
+
 
 ### Custo Computacional e Discussão
 
@@ -135,7 +135,7 @@ O código implementa um dicionário eletrônico usando uma árvore binária de b
 - Árvores desbalanceadas apresentaram queda de desempenho em grandes volumes.
 - Tries ofereceriam maior eficiência para autocompletar, especialmente com palavras com prefixos compartilhados.
 
----
+
 
 ## Conclusão Geral
 
