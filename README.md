@@ -1,8 +1,4 @@
-Claro! Eu ajustei e corrigi alguns erros de formatação, além de aprimorar a apresentação do README para torná-lo mais legível e estruturado em Markdown. Aqui está a versão revisada:
-
----
-
-# README - Problemas 2 e 3: Análise de Estruturas de Dados e Impacto Computacional
+# Problemas 2 e 3: Análise de Estruturas de Dados e Impacto Computacional
 
 **Autor:** Lucas Cerqueira Portela  
 **Email:** lucascerqueiraportela04@gmail.com  
