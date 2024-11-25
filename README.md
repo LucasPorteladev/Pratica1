@@ -1,3 +1,7 @@
+Claro! Eu ajustei e corrigi alguns erros de formatação, além de aprimorar a apresentação do README para torná-lo mais legível e estruturado em Markdown. Aqui está a versão revisada:
+
+---
+
 # README - Problemas 2 e 3: Análise de Estruturas de Dados e Impacto Computacional
 
 **Autor:** Lucas Cerqueira Portela  
@@ -13,14 +17,13 @@
    - [Descrição do Código](#descrição-do-código)
    - [Estruturas Utilizadas](#estruturas-utilizadas-no-problema-2)
    - [Análise de Crescimento](#análise-de-crescimento)
-   - [Impacto no Custo Computacional](#impacto-no-custo-computacional)
-   - [Gráficos de Custo Assintótico](#gráficos-de-custo-assintótico-do-problema-2)
 3. [Problema 3: Dicionário Eletrônico com Autocompletar](#problema-3-dicionário-eletrônico-com-autocompletar)
    - [Descrição do Código](#descrição-do-código-do-problema-3)
    - [Estruturas Utilizadas](#estruturas-utilizadas-no-problema-3)
    - [Custo Computacional e Discussão](#custo-computacional-e-discussão)
-   - [Gráficos de Custo Assintótico](#gráficos-de-custo-assintótico-do-problema-3)
 4. [Execução dos Códigos](#execução-dos-códigos)
+   - [Requisitos](#requisitos)
+   - [Comandos de Compilação e Execução](#comandos-de-compilação-e-execução)
 5. [Instalação do GCC e Requisitos](#instalação-do-gcc-e-requisitos)
 6. [Conclusão Geral](#conclusão-geral)
 
@@ -42,11 +45,13 @@ O documento também discute o impacto estrutural de árvores desbalanceadas vers
 ### Descrição do Código
 
 O código principal implementa um menu interativo que permite:
+
 - Inserir valores na árvore com `tree.insere(num)`.
 - Remover valores da árvore com `tree.remove(num)`.
 - Consultar a altura atual da árvore e determinar o caminho mais longo.
 
-#### **Menu de Opções**
+#### Menu de Opções
+
 1. **Inserção:** Insere um número e reorganiza os nós conforme a propriedade da árvore binária de busca.
 2. **Remoção:** Remove um nó específico, ajustando as conexões de acordo com os casos (nó folha, com um filho ou com dois filhos).
 3. **Consulta:** Mostra a altura da árvore e imprime o caminho mais longo da raiz até uma folha.
@@ -61,18 +66,17 @@ O código principal implementa um menu interativo que permite:
      - No melhor caso (árvore equilibrada): \(h = \log n\), resultando em \(O(\log n)\).
 
 2. **Caminho Mais Longo:**
-   - Identifica o maior trajeto da raiz até uma folha, com busca recursiva nos sub-ramos esquerdo e direito.
-
----
+   - Identifica o maior trajeto da raiz até uma folha, utilizando uma busca recursiva nos sub-ramos esquerdo e direito.
 
 ### Análise de Crescimento
 
-| **Inserção**       | **Altura \(h\)** | **Custo Médio**   | **Custo Máximo**   |
-|--------------------|------------------|--------------------|--------------------|
-| Desbalanceada      | \(n\)            | \(O(n)\)           | \(O(n)\)           |
-| Equilibrada        | \(\log n\)       | \(O(\log n)\)      | \(O(\log n)\)      |
+| **Inserção**       | **Altura (\(h\))** | **Custo Médio**   | **Custo Máximo**   |
+|--------------------|--------------------|-------------------|--------------------|
+| Desbalanceada      | \(n\)              | \(O(n)\)          | \(O(n)\)           |
+| Equilibrada        | \(\log n\)         | \(O(\log n)\)     | \(O(\log n)\)      |
 
 #### Observação do Custo Adicional de 39%
+
 - Árvores desbalanceadas apresentaram um aumento médio de **39% no custo computacional** em operações de inserção e remoção devido à profundidade excessiva.
 
 ---
@@ -83,7 +87,8 @@ O código principal implementa um menu interativo que permite:
 
 Este código implementa um dicionário eletrônico que utiliza uma árvore binária para armazenar e buscar palavras.
 
-#### **Funcionalidades**
+#### Funcionalidades
+
 1. **Carregamento de Dados:**
    - Lê palavras de um arquivo `datasets/words.txt`.
    - Insere as palavras na árvore binária com o método `inserir`.
@@ -96,51 +101,75 @@ Este código implementa um dicionário eletrônico que utiliza uma árvore biná
    - Solicita ao usuário um prefixo.
    - Retorna sugestões de palavras e verifica correspondências exatas.
 
----
-
 ### Estruturas Utilizadas no Problema 3
 
 1. **Árvore Binária de Busca (BST):**
    - Armazena palavras em ordem lexicográfica.
    - **Complexidade:**
-     - Inserção, busca: \(O(h)\), onde \(h\) é a altura.
+     - Inserção e busca: \(O(h)\), onde \(h\) é a altura da árvore.
 
 2. **Carregamento de Palavras:**
    - Gerenciado pela classe `Dicionario`, que lê o arquivo e insere as palavras na BST.
 
----
-
 ### Custo Computacional e Discussão
 
-| **Operação**     | **BST (Desbalanceada)** | **BST (Equilibrada)** |
-|-------------------|-------------------------|------------------------|
-| Inserção          | \(O(n)\)               | \(O(\log n)\)          |
-| Busca por Prefixo | \(O(n)\)               | \(O(\log n)\)          |
-
----
-
-### Gráficos de Custo Assintótico do Problema 3
-
-#### 1. Custo de Busca por Prefixo
-![Custo de Busca por Prefixo](https://via.placeholder.com/800x400?text=Gráfico:+Custo+de+Busca+por+Prefixo)
+| **Operação**       | **BST (Desbalanceada)** | **BST (Equilibrada)** |
+|--------------------|-------------------------|------------------------|
+| Inserção           | \(O(n)\)                | \(O(\log n)\)          |
+| Busca por Prefixo  | \(O(n)\)                | \(O(\log n)\)          |
 
 ---
 
 ## Execução dos Códigos
 
 ### Requisitos
-- Compilador C++ compatível com padrão C++11 ou superior (ex.: `g++`).
+
+- Compilador C++ compatível com o padrão C++11 ou superior (ex.: `g++`).
 - Estrutura do projeto:
   - **Problema 2:** Inclui `src/` com código e `Makefile`.
   - **Problema 3:** Inclui `src/`, `datasets/words.txt` e `Makefile`.
 
 ### Comandos de Compilação e Execução
+
 1. **Problema 2:**
    ```bash
    cd Problema2
    make r
+   ```
 
 2. **Problema 3:**
    ```bash
    cd Problema3
    make r
+   ```
+
+---
+
+## Instalação do GCC e Requisitos
+
+Para instalar o GCC, siga o comando correspondente ao seu sistema operacional:
+
+### Ubuntu / Debian
+
+```bash
+sudo apt update
+sudo apt install build-essential
+```
+
+### MacOS (usando Homebrew)
+
+```bash
+brew install gcc
+```
+
+### Windows
+
+- Instale o **MinGW** ou utilize o **WSL (Windows Subsystem for Linux)** para ter acesso ao GCC.
+
+---
+
+## Conclusão Geral
+
+Este projeto exemplifica a importância de se analisar a altura e o balanceamento das árvores binárias ao implementar estruturas como dicionários e árvores de busca. Árvores desbalanceadas, apesar de funcionarem, podem ter um impacto significativo nos custos computacionais, especialmente para inserção e busca. Em contraste, árvores equilibradas, como AVL ou Red-Black, oferecem garantias melhores de performance ao manter uma altura logarítmica.
+
+Além disso, o uso de árvores binárias para implementar funcionalidades como autocompletar ilustra a flexibilidade e eficiência dessas estruturas de dados quando utilizadas adequadamente.
