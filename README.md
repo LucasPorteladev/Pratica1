@@ -126,14 +126,3 @@ Implementa um dicionário utilizando uma árvore binária para organizar e busca
    cd Problema3
    make
    ./build/main.out
-
-Instalação do GCC
-
-    Linux/Mac:
-   ```bash
-sudo apt-get install g++
-
-Windows (via MinGW):
-   ```bash
-Baixar MinGW: MinGW Download
-Adicionar bin ao PATH.
